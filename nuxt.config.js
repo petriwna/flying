@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   ssr: false,
   target: 'static',
   app: {
-    baseURL: '/flying/', // Обов'язково для GitHub Pages (ім'я репозиторію)
+    baseURL: '/flying/',
   },
   head: {
     title: 'Nuxt.js starter for CSB',
