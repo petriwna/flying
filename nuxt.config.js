@@ -20,4 +20,10 @@ export default defineNuxtConfig({
   components: true,
   css: ['@/assets/styles/main.scss'],
   plugins: [],
+  build: {
+    target: 'static',
+  },
+  generate: {
+    dir: 'dist',
+  },
 })
