@@ -1,5 +1,9 @@
 export default {
   head: {
+    ssr: false,
+    app: {
+      baseURL: '/flying/', // обов'язково для GitHub Pages
+    },
     title: "Nuxt.js starter for CSB",
     meta: [
       { charset: "utf-8" },
