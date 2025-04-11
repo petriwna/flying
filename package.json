@@ -1,0 +1,28 @@
+{
+  "name": "codesandbox-nuxt",
+  "version": "1.0.0",
+  "description": "Nuxt starter for CodeSandBox",
+  "author": "Nataliia Sychevska",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@nuxt/components": "^2.2.1",
+    "consola": "^3.4.2",
+    "node-fetch-native": "^1.6.6",
+    "nuxt": "^3.16.2",
+    "vue": "^3.5.13",
+    "vue-template-compiler": "^2.7.16"
+  },
+  "packageManager": "yarn@4.9.1+sha512.f95ce356460e05be48d66401c1ae64ef84d163dd689964962c6888a9810865e39097a5e9de748876c2e0bf89b232d583c33982773e9903ae7a76257270986538",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "sass": "^1.86.3",
+    "vue-svg-loader": "^0.16.0"
+  }
+}

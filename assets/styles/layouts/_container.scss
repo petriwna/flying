@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100vh;
+  background-image: url("/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  &__fly {
+    position: relative;
+    height: 75%;
+  }
+
+  &__controller {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

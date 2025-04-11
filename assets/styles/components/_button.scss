@@ -1,0 +1,16 @@
+.button {
+  position: absolute;
+  bottom: 20%;
+  left: 47%;
+  width: 10%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--color-yellow);
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-yellow);
+    color: var(--color-white);
+  }
+}
