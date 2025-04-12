@@ -22,11 +22,13 @@ const flightData = rawData.map(item => ({
   ...item,
   timestamp: item.timestamp - baseTimestamp,
   speed: Number(item.speed),
+
   direction: Number(item.direction)
 }));
 
 const totalFlightTime = flightData.at(-1).timestamp;
 const kmToSvgFactor = 0.13;
+
 const deg2rad = deg => deg * (Math.PI / 180);
 
 function calculateOffset(time, speed, direction) {
