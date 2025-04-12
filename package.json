@@ -8,8 +8,8 @@
     "dev": "nuxt dev",
     "build": "nuxt build",
     "generate": "nuxt generate",
-    "start": "nuxt start",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "preview": "npx serve .output/public"
   },
   "dependencies": {
     "@nuxt/components": "^2.2.1",

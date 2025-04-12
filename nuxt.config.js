@@ -1,28 +1,23 @@
 export default defineNuxtConfig({
   ssr: false,
   nitro: {
-    preset: 'static'
+    preset: 'static',
   },
   generate: {
     dir: 'dist'
   },
   app: {
-    baseURL: '/flying/',
+    baseURL: '/flying',
     head: {
-      title: 'Nuxt.js starter for CSB',
+      title: 'Flying',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'Official Nuxt.js starter for CodeSandBox'
-        }
+        { name: 'description', content: 'Анімація польоту БПЛА на Nuxt 3' }
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
     },
   },
-
   components: true,
   css: ['@/assets/styles/main.scss'],
   plugins: [],
