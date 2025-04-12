@@ -1,12 +1,12 @@
 <template>
   <svg class="flight-map" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
     <g :transform="`translate(${position.x}, ${position.y}) rotate(${rotation}) scale(0.1)`">
-      <image href="@/assets/plane.svg" x="-15" y="-15" height="30" width="30" />
+      <image href="@/public/plane.svg" x="-15" y="-15" height="30" width="30" />
     </g>
   </svg>
 </template>
 <script setup>
-import rawData from '~/assets/data/flight_data.json';
+import rawData from '~/public/data/flight_data.json';
 
 import { ref } from 'vue';
 
