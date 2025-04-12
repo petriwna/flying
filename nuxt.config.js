@@ -1,6 +1,11 @@
 export default defineNuxtConfig({
   ssr: false,
-  target: 'static',
+  nitro: {
+    preset: 'static'
+  },
+  generate: {
+    dir: 'dist'
+  },
   app: {
     baseURL: '/flying/',
     head: {
@@ -17,10 +22,9 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
     },
   },
+
   components: true,
   css: ['@/assets/styles/main.scss'],
   plugins: [],
-  generate: {
-    dir: 'dist',
-  },
+  compatibilityDate: '2025-04-12'
 })
