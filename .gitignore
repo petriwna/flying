@@ -41,4 +41,6 @@ gh-pages
 
 .yarn
 
-output
+.output
+
+.nuxt
