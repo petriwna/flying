@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <Map />
-    <Plane ref="plane" />
+    <Plane ref="plane" v-model:isAnimating="isAnimating" />
     <Controller
         :isAnimating="isAnimating"
         @startAnimation="startPlaneAnimation"

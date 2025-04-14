@@ -11,6 +11,7 @@ import rawData from '~/public/data/flight_data.json';
 import { ref } from 'vue';
 
 const TOTAL_DURATION_MS = 20000;
+const emit = defineEmits(['update:isAnimating']);
 
 const position = ref({ x: 50, y: 50 });
 const rotation = ref(0);
@@ -85,16 +86,21 @@ function animateFrame(timestamp) {
 
   if (progress < 1) {
     animationFrame = requestAnimationFrame(animateFrame);
+  } else {
+    emit('update:isAnimating', false);
+    reset();
   }
 }
 
 const startAnimation = () => {
   reset();
+  emit('update:isAnimating', true);
   animationFrame = requestAnimationFrame(animateFrame);
 };
 
 const stopAnimation = () => {
   cancelAnimationFrame(animationFrame);
+  emit('update:isAnimating', false);
   reset();
 };
 
